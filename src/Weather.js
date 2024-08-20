@@ -19,7 +19,7 @@ const Weather = () => {
     const [weatherData, setWeatherData] = useState([]);  
     const [error, setError] = useState('');  
 
-    const API_KEY = 'dabf10f8041f12ff5c8acc58151e6f5d'; // Заміни на свій API ключ  
+    const API_KEY = process.env.REACT_APP_API_KEY; 
 
     const getWeather = async () => {  
         const data = [];  
